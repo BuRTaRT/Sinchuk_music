@@ -1,0 +1,429 @@
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	min-height: 110%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+.index-h1 {
+	position: relative;
+	margin-bottom: 5px;
+	padding-top: 15%;
+	text-align: center;
+	font-size: 64px;
+	z-index:1000;
+	color: white;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 80px;
+	background-color: rgb(24, 24, 24);
+}
+
+.footer-inner {
+	margin: 0 auto;
+	width: 80%;
+	color: white;
+	text-align: center;
+}
+
+.link {
+	display: inline-block;
+	margin: 15px auto;
+}
+
+.link>a {
+	display: inline-block;
+	color: white;
+}
+
+.link>span {}
+
+.nav {
+	display: inline-block;
+	padding-bottom: 8px;
+}
+
+.nav>ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.nav>ul>li>a {
+	padding: 10px 10px;
+	border-radius: 8px;
+	background: linear-gradient(180deg, #181818, rgb(80, 80, 80));
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.nav>ul>li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav>ul>li>a:hover {
+	background: linear-gradient(180deg, #505050, rgb(124, 124, 124));
+	transition: background 1s;
+}
+
+#btn {
+	position: absolute;
+	left: -60px;
+	z-index: 3;
+	margin-left: 50%;
+	padding: 8px 14px;
+	width: 120px;
+	border: 20px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#btn:hover {
+	cursor: pointer;
+}
+
+.line {
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 12px;
+	background-color: rgb(65, 65, 65);
+	color: rgb(111, 111, 111);
+	text-align: center;
+	font-size: 11px;
+}
+
+.clearfix::after {
+	display: table;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+.container-bio {
+	margin: 0 auto;
+	min-height: 6130px;
+	width: 1000px;
+}
+
+.left-col p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.left-col {
+	float: left;
+	width: 50%;
+}
+
+.right-col {
+	float: left;
+	width: 50%;
+}
+
+.bio {
+	text-align: center;
+}
+
+.lang-choise {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.left-col>p {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.right-col {
+	font-size: 25px;
+}
+
+.right-col>h2 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 40px;
+}
+
+.wiki {
+	margin-left: 120px;
+	color: #4682B4;
+}
+
+.descr {
+	width: 435px;
+	font-weight: 600;
+	font-size: 0.76em;
+	font-family: monospace;
+}
+
+.disco {
+	padding-top: 15px;
+	padding-left: 40px;
+	font-size: 30px;
+	font-family: monospace;
+}
+
+.disco-songs {
+	letter-spacing: 2px;
+	font-family: monospace;
+}
+
+.wrap {
+	background-image: url(img/music-bg.webp);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 2400px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.container-music {
+	width: 1000px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	min-height: 2000px;
+}
+
+.titles {
+	display: inline-block;
+	font-size: 40px;
+	width: 25%;
+	text-align: center;
+	font-weight: 600;
+}
+
+.left {
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+}
+
+.main {
+	font-size: 48px;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+}
+
+.first-album {
+	float: left;
+	width: 600px;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+.buy-left {
+	display: inline-block;
+}
+
+.subscr-right {
+	display: inline-block;
+	margin-left: 270px;
+}
+
+.img-block {
+	min-height: 500px;
+	width: 572px;
+	background: url(img/heart-of-stone.jpg);
+	margin-top: 15px;
+	margin-left: 13px;
+	background-position: center;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+}
+
+.controls {
+	margin-top: 20px;
+}
+
+.song-ul {
+	list-style: none;
+	text-align: left;
+	padding: 0;
+}
+
+.num {
+	padding-right: 20px;
+}
+
+.song-list {
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px gray solid;
+	font: normal normal normal 14px "courier new", courier-ps-w01, courier-ps-w02, courier-ps-w10, monospace;
+	letter-spacing: 1px;
+	cursor: pointer;
+	
+}
+.track-length{
+	float: right;
+}
+
+.song-list:hover {
+	color: #F0B000;
+}
+
+.second-album {
+	float: left;
+	width: 560px;
+	min-height: 300px;
+	border: 2px gray solid;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.img-block2 {
+	background: url(img/img10.jpg);
+	width: 550px;
+	height: 550px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}
+
+.song-list2 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px gray solid;
+	font: normal normal normal 14px "courier new", courier-ps-w01, courier-ps-w02, courier-ps-w10, monospace;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.song-list2:hover {
+	color: #F0B000;
+}
+
+.controls2 {
+	margin-top: 20px;
+}
+
+.third-album {
+	float: right;
+	width: 310px;
+	min-height: 400px;
+	border: 1px solid white;
+	margin-top: 35px;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.img-block3 {
+	background: url(img/img11.jpg);
+	width: 280px;
+	height: 300px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.song-list3{
+		padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px gray solid;
+	font: normal normal normal 14px "courier new", courier-ps-w01, courier-ps-w02, courier-ps-w10, monospace;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.song-name {
+	margin-top: 20px;
+}
+
+.songs-scroll {
+	height: 200px;
+	overflow-y: auto;
+}
+
+.fourth-album {
+	float: right;
+	width: 310px;
+	min-height: 400px;
+	border: 1px solid white;
+	margin-top: 20px;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.img-block4 {
+	background: url(img/img12.jpg);
+	width: 280px;
+	height: 300px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.song-list4 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px gray solid;
+	font: normal normal normal 14px "courier new", courier-ps-w01, courier-ps-w02, courier-ps-w10, monospace;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.fifth-album {
+	float: right;
+	width: 280px;
+	min-height: 400px;
+	border: 1px solid white;
+	margin-top: 10px;
+	padding: 10px;
+	margin-right: 35px;
+}
+
+.img-block5 {
+	background: url(img/img13.jpg);
+	width: 280px;
+	height: 280px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	padding-top: 10px;
+}
+
+.song-list5 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px gray solid;
+	font: normal normal normal 14px "courier new", courier-ps-w01, courier-ps-w02, courier-ps-w10, monospace;
+	letter-spacing: 1px;
+	cursor: pointer;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+.controls5 {
+	width: 250px;
+}
+
+.
