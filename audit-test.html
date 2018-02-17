@@ -6,46 +6,75 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="animation.css">
 </head>
 
 <body class="body">
 	<div class="wrap">
 		<div class="container-music ">
 			<div class="music-header">
-				<p class="titles left">Albums</p>
+				<div class="titles left"><span>Albums</span></div>
 				<p class="titles main">Music</p>
 				<p class="titles right">Songs</p>
 			</div>
 			<div class="first-album ">
-				<span class="buy-left">купить альбом за $9.99</span>
-				<span class="subscr-right">поделитсья альбомом</span>
-				<div class="img-block"></div>
-				<div id="song-name"></div>
-				<div class="music-control">
-					<audio class="controls" src="heart-of-stone/HEART%20OF%20STONE%20.mp3" controls></audio>
-					
+				<div class="subscr-container clearfix">
+					<span class="buy-left">купить альбом за $9.99</span>
+					<div class="subscr-right"><span class="subscr-text">поделиться альбомом</span>
+						<div class="vk "><img src="vk-128.png" alt="vk" height="25px" width="25px"></div>
+						<div class="face "><img src="face.png" alt="vk" height="25px" width="25px"></div>
+						<div class="twitter"><img src="twitter.png" alt="twitter" height="25px" width="25px"></div>
+					</div>
 				</div>
+				<div class="img-block"></div>
+				<div class="song-name">SHE'S A LIAR</div>
+				<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+				<div class="button play" id="btn-play"></div>
+				<div class="btn-prev" id="btn-prev"></div>
+				<div class="btn-next" id="btn-next"></div>
+				<div class="progress-line1">
+					<div class="progress1"></div>
+				</div>
+				<div class="time"><span class="minutes" id="#minutes1">00</span>:<span class="seconds" id="#seconds1">00</span></div>/
+				<div class="duration"> <span class="duration-minutes" id="#duration1">4:10</span></div>
+
 				<div class="songs">
 					<ul class="song-ul">
 
-						<li class="song-list" data-img="img/img0.jpg"><span class="num">1</span><span class="track-name">SHE'S A LIAR</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img1.jpg"><span class="num">2</span><span class="track-name">WE'LL BE ALLRIGHT</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img2.jpg"><span class="num">3</span><span class="track-name">LOST IN HEAVEN</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img3.jpg"><span class="num">4</span><span class="track-name">HEART OF STONE</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img4.jpg"><span class="num">5</span><span class="track-name">MOTHER'S EYES</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img5.jpg"><span class="num">6</span><span class="track-name">JUST GET AWAY</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img6.jpg"><span class="num">7</span><span class="track-name">I'M FALLING</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img7.jpg"><span class="num">8</span><span class="track-name">NOW AND FOREVER</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img8.jpg"><span class="num">9</span><span class="track-name">TRIUMPHS OF A EVIL</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img9.jpg"><span class="num">10</span><span class="track-name">HEY, YOU</span><span class="track-length"></span></li>
+						<li class="song-list" data-img="img/img0.jpg" data-song="music/heart/song0.mp3" data-song-name="SHE'S A LIAR" data-song-length="04:10"><span class="num">1</span><span class="track-name">SHE'S A LIAR</span><span class="track-length">04:10</span></li>
+						<li class="song-list" data-img="img/img1.jpg" data-song="music/heart/song1.mp3" data-song-name="WE'LL BE ALLRIGHT" data-song-length=""><span class="num">2</span><span class="track-name">WE'LL BE ALLRIGHT</span><span class="track-length"></span></li>
+						<li class="song-list" data-img="img/img2.jpg" data-song="music/heart/song2.mp3" data-song-name="LOST IN HEAVEN" data-song-length="04:41"><span class="num">3</span><span class="track-name">LOST IN HEAVEN</span><span class="track-length">04:41</span></li>
+						<li class="song-list" data-img="img/img3.jpg" data-song="music/heart/song3.mp3" data-song-name="HEART OF STONE" data-song-length="06:29"><span class="num">4</span><span class="track-name">HEART OF STONE</span><span class="track-length">06:29</span></li>
+						<li class="song-list" data-img="img/img4.jpg" data-song="music/heart/song4.mp3" data-song-name="MOTHER'S EYES" data-song-length="08:08"><span class="num">5</span><span class="track-name">MOTHER'S EYES</span><span class="track-length">08:08</span></li>
+						<li class="song-list" data-img="img/img5.jpg" data-song="music/heart/song5.mp3" data-song-name="JUST GET AWAY" data-song-length="04:32"><span class="num">6</span><span class="track-name">JUST GET AWAY</span><span class="track-length">04:32</span></li>
+						<li class="song-list" data-img="img/img6.jpg" data-song="music/heart/song6.mp3" data-song-name="I'M FALLING" data-song-length=""><span class="num">7</span><span class="track-name">I'M FALLING</span><span class="track-length"></span></li>
+						<li class="song-list" data-img="img/img7.jpg" data-song="music/heart/song7.mp3" data-song-name="NOW AND FOREVER" data-song-length="04:18"><span class="num">8</span><span class="track-name">NOW AND FOREVER</span><span class="track-length">04:18</span></li>
+						<li class="song-list" data-img="img/img8.jpg" data-song="music/heart/song8.mp3" data-song-name="TRIUMPHS OF A EVIL" data-song-length="08:14"><span class="num">9</span><span class="track-name">TRIUMPHS OF A EVIL</span><span class="track-length">08:14</span></li>
+						<li class="song-list" data-img="img/img9.jpg" data-song="music/heart/song9.mp3" data-song-name="HEY, YOU" data-song-length="06:07"><span class="num">10</span><span class="track-name">HEY, YOU</span><span class="track-length">06:07</span></li>
 					</ul>
 				</div>
 			</div>
 			<div class="third-album">
-				<div class="img-block3"></div>
-				<div class="song-name3"></div>
-				<div class="music-control ">
-					<audio class="controls3" src="/music/Coverman/song0.mp3" controls></audio>
+				<div class="subscr-container clearfix">
+					<div class="subscr-right"><span class="subscr-text">поделиться альбомом</span>
+						<div class="vk "><img src="vk-128.png" alt="vk" height="25px" width="25px"></div>
+						<div class="face "><img src="face.png" alt="vk" height="25px" width="25px"></div>
+						<div class="twitter"><img src="twitter.png" alt="twitter" height="25px" width="25px"></div>
+					</div>
+				</div>
+				<div class="img-block3" id="img-block3"></div>
+				<div class="song-name3" id="song-name3"></div>
+				
+					<div class="song-name" id="song-name3">SHE'S A LIAR</div>
+					<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+					<div class="button play" id="btn-play3"></div>
+					<div class="btn-prev" id="btn-prev3"></div>
+					<div class="btn-next" id="btn-next3"></div>
+					<div class="progress-line3" id="progress3">
+						<div class="progress1" id="progress3"></div>
+					</div>
+					<div class="time"><span class="minutes" id="minutes3">00</span>:<span class="seconds" id="seconds3">00</span></div>/
+					<div class="duration"> <span class="duration-minutes" id="#duration3">4:10</span></div>
 					<div class="songs-scroll">
 						<ul class="song-ul">
 							<li class="song-list3"><span class="num">1</span>Каріна Плай і Слава Сінчук - Tell me why</li>
@@ -56,15 +85,30 @@
 							<li class="song-list3"><span class="num">6</span>SMOCK on The Water</li>
 						</ul>
 					</div>
-				</div>
 
 
 			</div>
 			<div class="fourth-album">
+				<div class="subscr-container clearfix">
+					<div class="subscr-right"><span class="subscr-text">поделиться альбомом</span>
+						<div class="vk "><img src="vk-128.png" alt="vk" height="25px" width="25px"></div>
+						<div class="face "><img src="face.png" alt="vk" height="25px" width="25px"></div>
+						<div class="twitter"><img src="twitter.png" alt="twitter" height="25px" width="25px"></div>
+					</div>
+				</div>
 				<div class="img-block4"></div>
 				<div class="song-name4"></div>
 				<div class="music-controls">
-					<audio src="" class="controls4" src="/music/Coverman/song0.mp3" controls></audio>
+					<div class="song-name">SHE'S A LIAR</div>
+					<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+					<div class="button play"></div>
+					<div class="btn-prev" id="btn-prev"></div>
+					<div class="btn-next" id="btn-next"></div>
+					<div class="progress-line4">
+						<div class="progress1"></div>
+					</div>
+					<div class="time"><span class="minutes">00</span>:<span class="seconds">00</span></div>/
+					<div class="duration"> </div>
 				</div>
 				<div class="songs">
 					<ul class="song-ul">
@@ -89,35 +133,67 @@
 			<div class="songs">
 			</div>
 			<div class="second-album">
+				<div class="subscr-container clearfix">
+					<div class="buy-left">купить альбом за $9.99</div>
+					<div class="subscr-right"><span class="subscr-text">поделиться альбомом</span>
+						<div class="vk "><img src="vk-128.png" alt="vk" height="25px" width="25px"></div>
+						<div class="face "><img src="face.png" alt="vk" height="25px" width="25px"></div>
+						<div class="twitter"><img src="twitter.png" alt="twitter" height="25px" width="25px"></div>
+					</div>
+				</div>
 				<div class="img-block2 ">
 
 				</div>
-				<div class="music-control ">
-					<audio class="controls2" src="/music/Coverman/song0.mp3" controls></audio>
-					<div id="song-name2"></div>
+				<div class="music-controls ">
+					<div class="song-name2">RAIN (Uriah Heep)</div>
+					<div class="album-name">Slava Sinchuk / Cover Man (Специальное издание)</div>
+					<div class="button play" id="btn-play2"></div>
+					<div class="btn-prev" id="btn-prev2"></div>
+					<div class="btn-next" id="btn-next2"></div>
+					<div class="progress-line1">
+						<div class="progress1"></div>
+					</div>
+					<div class="time"><span class="minutes">00</span>:<span class="seconds">00</span></div>/
+					<div class="duration2">03:46</div>
 				</div>
 				<div class="songs">
-					<ul class="song-ul">
-						<li class="song-list2" d><span class="num">1</span>RAIN</li>
-						<li class="song-list2"><span class="num">2</span>FREE ME</li>
-						<li class="song-list2"><span class="num">3</span>EASY LIVIN'</li>
-						<li class="song-list2"><span class="num">4</span>HARD HABIT TO BREAK (Chicago)</li>
-						<li class="song-list2"><span class="num">5</span>COME BACK TO ME (Uriah Heep)</li>
-						<li class="song-list2"><span class="num">6</span>BLACK SPIDER WOMAN (Livin'Blues)</li>
-						<li class="song-list2"><span class="num">7</span>BLINDMAN (Whitesnake)</li>
-						<li class="song-list2"><span class="num">8</span>I WANNA KNOW WHAT LOVE IS (Foreigner)</li>
-						<li class="song-list2"><span class="num">9</span>LADY IN BLACK (Uriah heep}</li>
-						<li class="song-list2"><span class="num">10</span>HARD TO SAY I'M SORRY (Chicago)</li>
+					<ul class="song-ul2">
+						<li class="song-list2" data-song-name2="RAIN (Uriah Heep)" data-song="music/coverman/song0.mp3" data-song-length="03:46"><span class="num">1</span><span class="track-name">RAIN (Uriah Heep)</span><span class="track-length">03:46</span></li>
+						<li class="song-list2" data-song-name2="FREE ME (Uriah Heep)" data-song="music/coverman/song1.mp3" data-song-length="03:53"><span class="num">2</span><span class="track-name">FREE ME (Uriah Heep)</span><span class="track-length">03:53</span></li>
+						<li class="song-list2" data-song-name2="EASY LIVIN' (Uriah Heep)" data-song="music/coverman/song2.mp3" data-song-length="02:34"><span class="num">3</span><span class="track-name">EASY LIVIN' (Uriah Heep)</span><span class="track-length">02:34</span></li>
+						<li class="song-list2" data-song-name2="HARD HABIT TO BREAK (Chicago)" data-song="music/coverman/song3.mp3" data-song-length="04:40"><span class="num">4</span><span class="track-name">HARD HABIT TO BREAK (Chicago)</span><span class="track-length">04:40</span></li>
+						<li class="song-list2" data-song-name2="COME BACK TO ME (Uriah Heep)" data-song="music/coverman/song4.mp3" data-song-length="04:22"><span class="num">5</span><span class="track-name">COME BACK TO ME (Uriah Heep)</span><span class="track-length">04:22</span></li>
+						<li class="song-list2" data-song-name2="BLACK SPIDER WOMAN (Livin'Blues)" data-song="music/coverman/song5.mp3" data-song-length="03:44"><span class="num">6</span><span class="track-name">BLACK SPIDER WOMAN (Livin'Blues)</span><span class="track-length">03:44</span></li>
+						<li class="song-list2" data-song-name2="BLINDMAN (Whitesnake)" data-song="music/coverman/song6.mp3" data-song-length="05:15"><span class="num">7</span><span class="track-name">BLINDMAN (Whitesnake)</span><span class="track-length">05:15</span></li>
+						<li class="song-list2" data-song-name2="I WANNA KNOW WHAT LOVE IS (Foreigner)" data-song="music/coverman/song7.mp3" data-song-length="04:55"><span class="num">8</span><span class="track-name">I WANNA KNOW WHAT LOVE IS (Foreigner)</span><span class="track-length">04:55</span></li>
+						<li class="song-list2" data-song-name2="LADY IN BLACK (Uriah heep)" data-song="music/coverman/song8.mp3" data-song-length="04:41"><span class="num">9</span><span class="track-name">LADY IN BLACK (Uriah heep)</span><span class="track-length">04:41</span></li>
+						<li class="song-list2" data-song-name2="HARD TO SAY I'M SORRY (Chicago)" data-song="music/coverman/song9.mp3" data-song-length="03:54"><span class="num">10</span><span class="track-name">HARD TO SAY I'M SORRY (Chicago)</span><span class="track-length">03:54</span></li>
 
 					</ul>
 				</div>
 
 			</div>
 			<div class="fifth-album">
+				<div class="subscr-container clearfix">
+					<div class="subscr-right"><span class="subscr-text">поделиться альбомом</span>
+						<div class="vk "><img src="vk-128.png" alt="vk" height="25px" width="25px"></div>
+						<div class="face "><img src="face.png" alt="vk" height="25px" width="25px"></div>
+						<div class="twitter"><img src="twitter.png" alt="twitter" height="25px" width="25px"></div>
+					</div>
+				</div>
 				<div class="img-block5"></div>
 				<div class="song-name5"></div>
 				<div class="music-controls">
-					<audio src="" class="controls5" src="/music/Coverman/song0.mp3" controls></audio>
+					<div class="song-name">SHE'S A LIAR</div>
+					<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+					<div class="button play"></div>
+					<div class="btn-prev" id="btn-prev"></div>
+					<div class="btn-next" id="btn-next"></div>
+					<div class="progress-line5">
+						<div class="progress1"></div>
+					</div>
+					<div class="time"><span class="minutes">00</span>:<span class="seconds">00</span></div>/
+					<div class="duration"></div>
 				</div>
 				<div class="songs">
 					<ul class="song-ul">
@@ -147,7 +223,7 @@
 			</div>
 
 		</div>
-		<div class="line"><span> &copy; 2017  GALAXY</span></div>
+		<div class="line"><span class="copy-right"> &copy; 2017  GALAXY</span></div>
 	</footer>
 	<script src="js.js"></script>
 </body>

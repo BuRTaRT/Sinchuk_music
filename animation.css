@@ -1,0 +1,40 @@
+@keyframes anim {
+	0% {
+		left: 150px;
+		opacity: 0.01;
+		transform: rotate(360deg);
+	}
+	50% {
+		opacity: 0.002;
+	}
+	100% {}
+}
+
+@keyframes title-anim {
+	0% {
+		top: -250px;
+		left: 120px;
+		transform: rotate(90deg);
+	}
+	50% {}
+	100% {}
+}
+
+@keyframes title-anim2 {
+	0% {
+		opacity: 0.01;
+	}
+	50% {}
+	100% {}
+}
+
+@keyframes copyright-anim {
+	0% {
+		left: -1000px;
+	}
+	50% {}
+	100% {}
+}
+
+
+}
