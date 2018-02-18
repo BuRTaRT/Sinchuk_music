@@ -40,13 +40,13 @@ footer {
 	color: white;
 	text-align: center;
 }
-.copy-right{
+
+.copy-right {
 	position: relative;
 	top: 0;
 	left: 0;
 	animation-name: copyright-anim;
 	animation-duration: 1.5s;
-	
 }
 
 .link {
@@ -92,7 +92,7 @@ footer {
 	transition: background 1s;
 }
 
-#btn {
+.btn {
 	position: absolute;
 	left: -60px;
 	z-index: 3;
@@ -258,7 +258,6 @@ footer {
 	text-align: left;
 }
 
-
 .buy-left {
 	float: left;
 	position: relative;
@@ -335,11 +334,13 @@ footer {
 	text-align: left;
 	padding: 0;
 }
+
 .song-ul2 {
 	list-style: none;
 	text-align: left;
 	padding: 0;
 }
+
 .num {
 	padding-right: 20px;
 }
@@ -383,7 +384,6 @@ footer {
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	margin-top: 15px;
-
 }
 
 .song-list2 {
@@ -402,7 +402,8 @@ footer {
 .controls2 {
 	margin-top: 20px;
 }
-.duration2{
+
+.duration2 {
 	display: inline;
 }
 
