@@ -8,13 +8,12 @@ var songName2 = document.querySelector(".song-name2");
 var trackName1 = document.querySelectorAll(".track-name")
 var progressLine1Width = getComputedStyle(progressLine1);
 progressLine1Width = parseInt(progressLine1Width.width);
-var playBtn = document.querySelector(".button");
-var btnPrev = document.querySelector("#btn-prev");
-var btnNext = document.querySelector("#btn-next");
-var trackLength = document.querySelectorAll(".track-length")
+var playBtn = document.querySelector("#btn-play1");
+var btnPrev = document.querySelector("#btn-prev1");
+var btnNext = document.querySelector("#btn-next1");
 var minutes = document.querySelector("#minutes1");
 var seconds = document.querySelector("#seconds1");
-var duration = document.querySelector("#duration1");
+var duration1 = document.querySelector("#duration1");
 var duration2 = document.querySelector(".duration2");
 var songUL1 = document.querySelector(".song-ul");
 var songUL2 = document.querySelector(".song-ul2");
@@ -24,11 +23,12 @@ var audio2=new Audio();
 audio2.src=songList2[0].dataset.song
 
 
-function watcherMinutesSeconds(duration,progressline,progress,minutes,seconds,audio) {
+function watcherMinutesSeconds() {
 	setInterval(function () {
-		var length = duration.innerHTML;
+		var length = duration1.innerHTML;
 		var arr = length.split(":");
 		length = +arr[0] * 60 + +arr[1];
+		console.log(length)
 
 		var x = progressLine1Width / length;
 		progress1.style.width = (audio1.currentTime * x) + "px";
@@ -57,7 +57,7 @@ function btnPrevNext(oper) {
 				audio1.src = songList1[i + oper].dataset.song;
 				imgBlock1.style.backgroundImage = "url(" + songList1[i + oper].dataset.img + ")";
 				songName1.innerHTML = songList1[i + oper].dataset.songName;
-				duration.innerHTML = songList1[i + oper].dataset.songLength;
+				duration1.innerHTML = songList1[i + oper].dataset.songLength;
 				audio1.play();
 				break;
 
@@ -102,7 +102,7 @@ songUL1.onclick = function (e) {
 		if (target.tagName == "LI") {
 			audio1.src = target.dataset.song;
 			songName1.innerHTML = target.dataset.songName;
-			duration.innerHTML = target.dataset.songLength;
+			duration1.innerHTML = target.dataset.songLength;
 			imgBlock1.style.backgroundImage = "url(" + target.dataset.img + ")";
 		}
 		target = target.parentNode;
