@@ -5,10 +5,11 @@
     		"height": 720,
     		"path": "video1/",
     		"filename": "blood",
-    		"types": ["mp4", "ogg", "webm"],
+    		"types": ["webm","mp4"],
     		"preload": true,
     		"autoplay": true,
     		"loop": true,
-    		"muted": true
+			"muted": true
+    		
     	});
     });

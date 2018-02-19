@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="animation.css">
 </head>
 
-<body class="body">
+<body class="body" id="body">
 	<div class="wrap">
 		<div class="container-music ">
 			<div class="music-header">
@@ -26,7 +26,7 @@
 						<div class="twitter"><img src="img/twitter.png" alt="twitter" height="25px" width="25px"></div>
 					</div>
 				</div>
-				<div class="img-block"></div>
+				<div class="img-block" id="img-block1"></div>
 				<div class="song-name" id="song-name1">SHE'S A LIAR</div>
 				<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
 				<div class="button play" id="btn-play1"></div>
@@ -39,18 +39,18 @@
 				<div class="duration"> <span id="duration1">4:10</span></div>
 
 				<div class="songs">
-					<ul class="song-ul">
+					<ul class="song-ul" id="song-ul1">
 
-						<li class="song-list" data-img="img/img0.jpg" data-song="music/heart/song0.mp3" data-song-name="SHE'S A LIAR" data-song-length="04:10"><span class="num">1</span><span class="track-name">SHE'S A LIAR</span><span class="track-length">04:10</span></li>
-						<li class="song-list" data-img="img/img1.jpg" data-song="music/heart/song1.mp3" data-song-name="WE'LL BE ALLRIGHT" data-song-length=""><span class="num">2</span><span class="track-name">WE'LL BE ALLRIGHT</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img2.jpg" data-song="music/heart/song2.mp3" data-song-name="LOST IN HEAVEN" data-song-length="04:41"><span class="num">3</span><span class="track-name">LOST IN HEAVEN</span><span class="track-length">04:41</span></li>
-						<li class="song-list" data-img="img/img3.jpg" data-song="music/heart/song3.mp3" data-song-name="HEART OF STONE" data-song-length="06:29"><span class="num">4</span><span class="track-name">HEART OF STONE</span><span class="track-length">06:29</span></li>
-						<li class="song-list" data-img="img/img4.jpg" data-song="music/heart/song4.mp3" data-song-name="MOTHER'S EYES" data-song-length="08:08"><span class="num">5</span><span class="track-name">MOTHER'S EYES</span><span class="track-length">08:08</span></li>
-						<li class="song-list" data-img="img/img5.jpg" data-song="music/heart/song5.mp3" data-song-name="JUST GET AWAY" data-song-length="04:32"><span class="num">6</span><span class="track-name">JUST GET AWAY</span><span class="track-length">04:32</span></li>
-						<li class="song-list" data-img="img/img6.jpg" data-song="music/heart/song6.mp3" data-song-name="I'M FALLING" data-song-length=""><span class="num">7</span><span class="track-name">I'M FALLING</span><span class="track-length"></span></li>
-						<li class="song-list" data-img="img/img7.jpg" data-song="music/heart/song7.mp3" data-song-name="NOW AND FOREVER" data-song-length="04:18"><span class="num">8</span><span class="track-name">NOW AND FOREVER</span><span class="track-length">04:18</span></li>
-						<li class="song-list" data-img="img/img8.jpg" data-song="music/heart/song8.mp3" data-song-name="TRIUMPHS OF A EVIL" data-song-length="08:14"><span class="num">9</span><span class="track-name">TRIUMPHS OF A EVIL</span><span class="track-length">08:14</span></li>
-						<li class="song-list" data-img="img/img9.jpg" data-song="music/heart/song9.mp3" data-song-name="HEY, YOU" data-song-length="06:07"><span class="num">10</span><span class="track-name">HEY, YOU</span><span class="track-length">06:07</span></li>
+						<li class="song-list" data-img="img/img0.jpg" data-song="music/heart/song0.mp3" data-song-name="SHE'S A LIAR" data-song-length="04:10" title="SHE'S A LIAR"><span class="num">1</span><span class="track-name">SHE'S A LIAR</span><span class="track-length">04:10</span></li>
+						<li class="song-list" data-img="img/img1.jpg" data-song="music/heart/song1.mp3" data-song-name="WE'LL BE ALLRIGHT" data-song-length="05:02" title="WE'LL BE ALLRIGHT"><span class="num">2</span><span class="track-name">WE'LL BE ALLRIGHT</span><span class="track-length">05:02</span></li>
+						<li class="song-list" data-img="img/img2.jpg" data-song="music/heart/song2.mp3" data-song-name="LOST IN HEAVEN" data-song-length="04:41" title="LOST IN HEAVEN"><span class="num">3</span><span class="track-name">LOST IN HEAVEN</span><span class="track-length">04:41</span></li>
+						<li class="song-list" data-img="img/img3.jpg" data-song="music/heart/song3.mp3" data-song-name="HEART OF STONE" data-song-length="06:29" title="HEART OF STONE"><span class="num">4</span><span class="track-name">HEART OF STONE</span><span class="track-length">06:29</span></li>
+						<li class="song-list" data-img="img/img4.jpg" data-song="music/heart/song4.mp3" data-song-name="MOTHER'S EYES" data-song-length="08:08" title="OTHER'S EYES"><span class="num">5</span><span class="track-name">MOTHER'S EYES</span><span class="track-length">08:08</span></li>
+						<li class="song-list" data-img="img/img5.jpg" data-song="music/heart/song5.mp3" data-song-name="JUST GET AWAY" data-song-length="04:32" title="JUST GET AWAY"><span class="num">6</span><span class="track-name">JUST GET AWAY</span><span class="track-length">04:32</span></li>
+						<li class="song-list" data-img="img/img6.jpg" data-song="music/heart/song1.mp3" data-song-name="I'M FALLING" data-song-length="05:02" title="I'M FALLING"><span class="num">7</span><span class="track-name">I'M FALLING</span><span class="track-length">05:02</span></li>
+						<li class="song-list" data-img="img/img7.jpg" data-song="music/heart/song7.mp3" data-song-name="NOW AND FOREVER" data-song-length="04:18" title="NOW AND FOREVER"><span class="num">8</span><span class="track-name">NOW AND FOREVER</span><span class="track-length">04:18</span></li>
+						<li class="song-list" data-img="img/img8.jpg" data-song="music/heart/song8.mp3" data-song-name="TRIUMPHS OF A EVIL" data-song-length="08:14" title="TRIUMPHS OF A EVIL"><span class="num">9</span><span class="track-name">TRIUMPHS OF A EVIL</span><span class="track-length">08:14</span></li>
+						<li class="song-list" data-img="img/img9.jpg" data-song="music/heart/song9.mp3" data-song-name="HEY, YOU" data-song-length="06:07" title="HEY, YOU"><span class="num">10</span><span class="track-name">HEY, YOU</span><span class="track-length">06:07</span></li>
 					</ul>
 				</div>
 			</div>
@@ -63,26 +63,24 @@
 					</div>
 				</div>
 				<div class="img-block3" id="img-block3"></div>
-				<div class="song-name3" id="song-name3"></div>
-
-				<div class="song-name" id="song-name3">SHE'S A LIAR</div>
-				<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+				<div class="song-name" id="song-name3">Каріна Плай і Слава Сінчук - Tell me why</div>
+				<div class="album-name">Sinchuk & ARNIKA / Slava Sinchuk</div>
 				<div class="button play" id="btn-play3"></div>
 				<div class="btn-prev" id="btn-prev3"></div>
 				<div class="btn-next" id="btn-next3"></div>
 				<div class="progress-line3" id="progress-line3">
-					<div class="progress3" id="progress3"></div>
+					<div class="progress1" id="progress3"></div>
 				</div>
 				<div class="time"><span class="minutes" id="minutes3">00</span>:<span class="seconds" id="seconds3">00</span></div>/
-				<div class="duration"> <span class="duration-minutes" id="#duration3">4:10</span></div>
+				<div class="duration"> <span class="duration-minutes" id="duration3">04:25</span></div>
 				<div class="songs-scroll">
-					<ul class="song-ul">
-						<li class="song-list3"><span class="num">1</span>Каріна Плай і Слава Сінчук - Tell me why</li>
-						<li class="song-list3"><span class="num">2</span>Viktor-Pavlik-i-Vyacheslav-Sinchuk - Smutok</li>
-						<li class="song-list3"><span class="num">3</span>Под Рождество</li>
-						<li class="song-list3"><span class="num">4</span>STRONGHOLD</li>
-						<li class="song-list3"><span class="num">5</span>A Gift From Above</li>
-						<li class="song-list3"><span class="num">6</span>SMOCK on The Water</li>
+					<ul class="song-ul" id="song-ul3">
+						<li class="song-list3" data-img="img/img14.jpg" data-song="music/Slava Sinchuk/song0.mp3" data-song-length="04:25" data-song-name="Каріна Плай і Слава Сінчук - Tell me why" title="Каріна Плай і Слава Сінчук - Tell me why"><span class="num">1</span>Каріна Плай і Слава Сінчук - Tell me why</li>
+						<li class="song-list3" data-img="img/img15.png" data-song="music/Slava Sinchuk/song1.mp3" data-song-length="03:59" data-song-name="Viktor-Pavlik-i-Vyacheslav-Sinchuk - Smutok" title="Viktor-Pavlik-i-Vyacheslav-Sinchuk - Smutok"><span class="num">2</span>Viktor-Pavlik-i-Vyacheslav-Sinchuk - Smutok</li>
+						<li class="song-list3" data-img="img/img16.jpg" data-song="music/Slava Sinchuk/song2.mp3" data-song-length="03:16" data-song-name="Под Рождество" title="Под Рождество"><span class="num">3</span>Под Рождество</li>
+						<li class="song-list3" data-img="img/img17.jpg" data-song="music/Slava Sinchuk/song3.mp3" data-song-length="04:17" data-song-name="STRONGHOLD" title="STRONGHOLD"><span class="num">4</span>STRONGHOLD</li>
+						<li class="song-list3" data-img="img/img18.jpg" data-song="music/Slava Sinchuk/song4.mp3" data-song-length="05:27" data-song-name="A Gift From Above" title="A Gift From Above"><span class="num">5</span>A Gift From Above</li>
+						<li class="song-list3" data-img="img/img19.jpg" data-song="music/Slava Sinchuk/song5.mp3" data-song-length="04:15" data-song-name="SMOCK on The Water" title="SMOCK on The Water"><span class="num">6</span>SMOCK on The Water</li>
 					</ul>
 				</div>
 
@@ -97,35 +95,35 @@
 					</div>
 				</div>
 				<div class="img-block4" id="img-block4"></div>
-				<div class="song-name4" id="song-name4"></div>
+			
 				<div class="music-controls">
-					<div class="song-name" id="song-name4">SHE'S A LIAR</div>
-					<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+					<div class="song-name" id="song-name4">Все прошло</div>
+					<div class="album-name">Slava Sinchuk & Galaxy / Galaxy</div>
 					<div class="button play" id="btn-play4"></div>
 					<div class="btn-prev" id="btn-prev4"></div>
 					<div class="btn-next" id="btn-next4"></div>
 					<div class="progress-line4" id="progress-line4">
-						<div class="progress1" id="progress-line4"></div>
+						<div class="progress1" id="progress4"></div>
 					</div>
 					<div class="time"><span class="minutes" id="minutes4">00</span>:<span class="seconds" id="seconds4">00</span></div>/
-					<div class="duration" id="duration4"> </div>
+					<div class="duration" id="duration4">05:06</div>
 				</div>
 				<div class="songs">
-					<ul class="song-ul">
-						<li class="song-list4"><span class="num">1</span>Все прошло</li>
-						<li class="song-list4"><span class="num">2</span>Август</li>
-						<li class="song-list4"><span class="num">3</span>Я остаюсь</li>
-						<li class="song-list4"><span class="num">4</span>Будь всегда со мной</li>
-						<li class="song-list4"><span class="num">5</span>Я буду помнить этот зал</li>
-						<li class="song-list4"><span class="num">6</span>Все как в сказке</li>
-						<li class="song-list4"><span class="num">7</span>От Винницы до Ницы</li>
-						<li class="song-list4"><span class="num">8</span>Консуэло</li>
-						<li class="song-list4"><span class="num">9</span>Sweet Rosanna</li>
-						<li class="song-list4"><span class="num">10</span>lady music</li>
-						<li class="song-list4"><span class="num">11</span>galaktika you run around myzuka.me</li>
-						<li class="song-list4"><span class="num">12</span>galaktika love me myzuka.me</li>
-						<li class="song-list4"><span class="num">13</span>galaktika love me myzuka.me</li>
-						<li class="song-list4"><span class="num">14</span>listen to my heart (and to your heart)</li>
+					<ul class="song-ul" id="song-ul4">
+						<li class="song-list4" data-song="music/A history/song0.mp3" data-song-name="Все прошло" data-song-length="05:06" title="Все прошло"><span class="num">1</span><span class="track-name">Все прошло</span><span class="track-length">05:06</span></li>
+						<li class="song-list4" data-song="music/A history/song1.mp3" data-song-name="Август" data-song-length="04:34" title="Август"><span class="num">2</span><span class="track-name">Август</span><span class="track-length">04:34</span></li>
+						<li class="song-list4" data-song="music/A history/song2.mp3" data-song-name="Я остаюсь" data-song-length="05:19" title="Я остаюсь"><span class="num">3</span><span class="track-name">Я остаюсь</span><span class="track-length">05:19</span></li>
+						<li class="song-list4" data-song="music/A history/song3.mp3" data-song-name="Будь всегда со мной" data-song-length="04:40" title="Будь всегда со мной"><span class="num">4</span><span class="track-name">Будь всегда со мной</span><span class="track-length">04:40</span></li>
+						<li class="song-list4" data-song="music/A history/song4.mp3" data-song-name="Я буду помнить этот зал" data-song-length="03:54" title="Я буду помнить этот зал"><span class="num">5</span><span class="track-name">Я буду помнить этот зал</span><span class="track-length">03:54</span></li>
+						<li class="song-list4" data-song="music/A history/song5.mp3" data-song-name="Все как в сказке" data-song-length="07:15" title="Все как в сказке"><span class="num">6</span><span class="track-name">Все как в сказке</span><span class="track-length">07:15</span></li>
+						<li class="song-list4" data-song="music/A history/song6.mp3" data-song-name="От Винницы до Ницы" data-song-length="06:42" title="От Винницы до Ницы"><span class="num">7</span><span class="track-name">От Винницы до Ницы</span><span class="track-length">06:42</span></li>
+						<li class="song-list4" data-song="music/A history/song7.mp3" data-song-name="Консуэло" data-song-length="03:48" title="Консуэло"><span class="num">8</span><span class="track-name">Консуэло</span><span class="track-length">03:48</span></li>
+						<li class="song-list4" data-song="music/A history/song8.mp3" data-song-name="Sweet Rosanna" data-song-length="06:00" title="Sweet Rosanna"><span class="num">9</span><span class="track-name">Sweet Rosanna</span><span class="track-length">06:00</span></li>
+						<li class="song-list4" data-song="music/A history/song9.mp3" data-song-name="lady music" data-song-length="04:18" title="lady music"><span class="num">10</span><span class="track-name">lady music</span><span class="track-length">04:18</span></li>
+						<li class="song-list4" data-song="music/A history/song10.mp3" data-song-name="galaktika you run around myzuka.me" data-song-length="04:23" title="galaktika you run around myzuka.me"><span class="num">11</span><span class="track-name">galaktika you run around myzuka.me</span><span class="track-length">04:23</span></li>
+						<li class="song-list4" data-song="music/A history/song11.mp3" data-song-name="galaktika love me myzuka.me" data-song-length="03:59" title="galaktika love me myzuka.me"><span class="num">12</span><span class="track-name">galaktika love me myzuka.me</span><span class="track-length">03:59</span></li>
+						<li class="song-list4" data-song="music/A history/song13.mp3" data-song-name="galaktika love me myzuka.me" data-song-length="04:25" title="galaktika love me myzuka.me"><span class="num">13</span><span class="track-name">galaktika love me myzuka.me</span><span class="track-length">04:25</span></li>
+						<li class="song-list4" data-song="music/A history/song14.mp3" data-song-name="listen to my heart (and to your heart)" data-song-length="04:23" title="listen to my heart (and to your heart)"><span class="num">14</span><span class="track-name">listen to my heart (and to your heart)</span><span class="track-length">04:23</span></li>
 					</ul>
 				</div>
 			</div>
@@ -157,17 +155,17 @@
 					<div class="duration" id="duration2">03:46</div>
 				</div>
 				<div class="songs">
-					<ul class="song-ul2">
-						<li class="song-list2" data-song-name2="RAIN (Uriah Heep)" data-song="music/coverman/song0.mp3" data-song-length="03:46"><span class="num">1</span><span class="track-name">RAIN (Uriah Heep)</span><span class="track-length">03:46</span></li>
-						<li class="song-list2" data-song-name2="FREE ME (Uriah Heep)" data-song="music/coverman/song1.mp3" data-song-length="03:53"><span class="num">2</span><span class="track-name">FREE ME (Uriah Heep)</span><span class="track-length">03:53</span></li>
-						<li class="song-list2" data-song-name2="EASY LIVIN' (Uriah Heep)" data-song="music/coverman/song2.mp3" data-song-length="02:34"><span class="num">3</span><span class="track-name">EASY LIVIN' (Uriah Heep)</span><span class="track-length">02:34</span></li>
-						<li class="song-list2" data-song-name2="HARD HABIT TO BREAK (Chicago)" data-song="music/coverman/song3.mp3" data-song-length="04:40"><span class="num">4</span><span class="track-name">HARD HABIT TO BREAK (Chicago)</span><span class="track-length">04:40</span></li>
-						<li class="song-list2" data-song-name2="COME BACK TO ME (Uriah Heep)" data-song="music/coverman/song4.mp3" data-song-length="04:22"><span class="num">5</span><span class="track-name">COME BACK TO ME (Uriah Heep)</span><span class="track-length">04:22</span></li>
-						<li class="song-list2" data-song-name2="BLACK SPIDER WOMAN (Livin'Blues)" data-song="music/coverman/song5.mp3" data-song-length="03:44"><span class="num">6</span><span class="track-name">BLACK SPIDER WOMAN (Livin'Blues)</span><span class="track-length">03:44</span></li>
-						<li class="song-list2" data-song-name2="BLINDMAN (Whitesnake)" data-song="music/coverman/song6.mp3" data-song-length="05:15"><span class="num">7</span><span class="track-name">BLINDMAN (Whitesnake)</span><span class="track-length">05:15</span></li>
-						<li class="song-list2" data-song-name2="I WANNA KNOW WHAT LOVE IS (Foreigner)" data-song="music/coverman/song7.mp3" data-song-length="04:55"><span class="num">8</span><span class="track-name">I WANNA KNOW WHAT LOVE IS (Foreigner)</span><span class="track-length">04:55</span></li>
-						<li class="song-list2" data-song-name2="LADY IN BLACK (Uriah heep)" data-song="music/coverman/song8.mp3" data-song-length="04:41"><span class="num">9</span><span class="track-name">LADY IN BLACK (Uriah heep)</span><span class="track-length">04:41</span></li>
-						<li class="song-list2" data-song-name2="HARD TO SAY I'M SORRY (Chicago)" data-song="music/coverman/song9.mp3" data-song-length="03:54"><span class="num">10</span><span class="track-name">HARD TO SAY I'M SORRY (Chicago)</span><span class="track-length">03:54</span></li>
+					<ul class="song-ul2" id="song-ul2">
+						<li class="song-list2" data-song-name="RAIN (Uriah Heep)" data-song="music/coverman/song0.mp3" data-song-length="03:46"><span class="num">1</span><span class="track-name">RAIN (Uriah Heep)</span><span class="track-length">03:46</span></li>
+						<li class="song-list2" data-song-name="FREE ME (Uriah Heep)" data-song="music/coverman/song1.mp3" data-song-length="03:53"><span class="num">2</span><span class="track-name">FREE ME (Uriah Heep)</span><span class="track-length">03:53</span></li>
+						<li class="song-list2" data-song-name="EASY LIVIN' (Uriah Heep)" data-song="music/coverman/song2.mp3" data-song-length="02:34"><span class="num">3</span><span class="track-name">EASY LIVIN' (Uriah Heep)</span><span class="track-length">02:34</span></li>
+						<li class="song-list2" data-song-name="HARD HABIT TO BREAK (Chicago)" data-song="music/coverman/song3.mp3" data-song-length="04:40"><span class="num">4</span><span class="track-name">HARD HABIT TO BREAK (Chicago)</span><span class="track-length">04:40</span></li>
+						<li class="song-list2" data-song-name="COME BACK TO ME (Uriah Heep)" data-song="music/coverman/song4.mp3" data-song-length="04:22"><span class="num">5</span><span class="track-name">COME BACK TO ME (Uriah Heep)</span><span class="track-length">04:22</span></li>
+						<li class="song-list2" data-song-name="BLACK SPIDER WOMAN (Livin'Blues)" data-song="music/coverman/song5.mp3" data-song-length="03:44"><span class="num">6</span><span class="track-name">BLACK SPIDER WOMAN (Livin'Blues)</span><span class="track-length">03:44</span></li>
+						<li class="song-list2" data-song-name="BLINDMAN (Whitesnake)" data-song="music/coverman/song6.mp3" data-song-length="05:15"><span class="num">7</span><span class="track-name">BLINDMAN (Whitesnake)</span><span class="track-length">05:15</span></li>
+						<li class="song-list2" data-song-name="I WANNA KNOW WHAT LOVE IS (Foreigner)" data-song="music/coverman/song7.mp3" data-song-length="04:55"><span class="num">8</span><span class="track-name">I WANNA KNOW WHAT LOVE IS (Foreigner)</span><span class="track-length">04:55</span></li>
+						<li class="song-list2" data-song-name="LADY IN BLACK (Uriah heep)" data-song="music/coverman/song8.mp3" data-song-length="04:41"><span class="num">9</span><span class="track-name">LADY IN BLACK (Uriah heep)</span><span class="track-length">04:41</span></li>
+						<li class="song-list2" data-song-name="HARD TO SAY I'M SORRY (Chicago)" data-song="music/coverman/song9.mp3" data-song-length="03:54"><span class="num">10</span><span class="track-name">HARD TO SAY I'M SORRY (Chicago)</span><span class="track-length">03:54</span></li>
 
 					</ul>
 				</div>
@@ -182,10 +180,9 @@
 					</div>
 				</div>
 				<div class="img-block5" id="img-block5"></div>
-				<div class="song-name5" id="song-name5"></div>
+				<div class="song-name" id="song-name5">Slava Sinchuk - Теll me why</div>
 
-				<div class="song-name">SHE'S A LIAR</div>
-				<div class="album-name">Slava Sinchuk / HEART OF STONE</div>
+				<div class="album-name">Slava Sinchuk & Karina Plai</div>
 				<div class="button play" id="btn-play5"></div>
 				<div class="btn-prev" id="btn-prev5"></div>
 				<div class="btn-next" id="btn-next5"></div>
@@ -193,12 +190,12 @@
 					<div class="progress1" id="progress5"></div>
 				</div>
 				<div class="time"><span class="minutes" id="minutes5">00</span>:<span class="seconds" id="seconds5">00</span></div>/
-				<div class="duration" id="duration5"></div>
+				<div class="duration" id="duration5"> 05:38</div>
 
 				<div class="songs">
-					<ul class="song-ul">
-						<li class="song-list5"><span class="num">1</span>Slava Sinchuk - Теll me why</li>
-						<li class="song-list5"><span class="num">2</span>SlavaSinchuk and Karina Plai - Tell me why</li>
+					<ul class="song-ul" id="song-ul5">
+						<li class="song-list5" data-song="music/Tell me why/song0.mp3"  data-song-name="Slava Sinchuk - Теll me why" data-song-length="05:38" data-img="img/img13.jpg"><span class="num">1</span>Slava Sinchuk - Теll me why</li>
+						<li class="song-list5" data-song="music/Tell me why/song1.mp3"  data-song-name="SlavaSinchuk and Karina Plai - Tell me why" data-song-length="04:25" data-img="img/img20.jpg"><span class="num">2</span>SlavaSinchuk and Karina Plai - Tell me why</li>
 					</ul>
 				</div>
 			</div>
