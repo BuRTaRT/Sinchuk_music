@@ -83,7 +83,6 @@ function watcherMinutesSeconds(duration, progressLine, progress, audioObj, minut
 		length = +arr[0] * 60 + +arr[1];
 		var x = progressLineWidth / length;
 		progress.style.width = (audioObj.currentTime * x) + "px";
-		console.log(length, x, progress.style.width)
 		progressLine.onclick = function (e) {
 			audioObj.currentTime = e.offsetX / x;
 		}
@@ -272,12 +271,12 @@ songUL2.onclick = function (e) {
 	liOnClickHandler(this, target, audio2, audio1, audio3, audio4, audio5, songName2, duration2, imgBlock2, playBtn2, playBtn1, playBtn3, playBtn4, playBtn5);
 }
 songUL3.onclick = function (e) {
-	watcherMinutesSeconds(duration3, progressLine3, progress3, audio3, audio5, minutes3, seconds3);
+	watcherMinutesSeconds(duration3, progressLine3, progress3, audio3, minutes3, seconds3);
 	target = e.target;
 	liOnClickHandler(this, target, audio3, audio1, audio2, audio4, audio5, songName3, duration3, imgBlock3, playBtn3, playBtn1, playBtn2, playBtn4, playBtn5);
 }
 songUL4.onclick = function (e) {
-	watcherMinutesSeconds(duration4, progressLine4, progress4, audio4, audio5, minutes4, seconds4);
+	watcherMinutesSeconds(duration4, progressLine4, progress4, audio4, minutes4, seconds4);
 	target = e.target;
 	liOnClickHandler(this, target, audio4, audio1, audio2, audio3, audio5, songName4, duration4, imgBlock4, playBtn4, playBtn1, playBtn2, playBtn3, playBtn5);
 }

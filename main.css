@@ -720,3 +720,35 @@ footer {
 	left: 14px;
 	top: 1px;
 }
+
+.container-video{
+	width: 1000px;
+	margin: 0 auto;
+	color: black;
+	text-align: center;
+	min-height: 1500px;
+}
+.header-name{
+	font-family: monospace;
+}
+.video-block1{
+	margin: 0 auto;
+	background-color: rgba(0,0,0,.8);
+	min-height: 750px;
+	width: 850px;
+	
+}
+.fan{
+	float: left;
+	margin-left: 15px;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.video-container1{
+	margin: 0 auto;
+	width: 820px;
+	min-height: 520px;
+	padding-top: 20px;
+	
+}
