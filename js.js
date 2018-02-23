@@ -70,7 +70,6 @@ var audio3 = new Audio();
 audio3.src = songList3[0].dataset.song;
 var audio4 = new Audio();
 audio4.src = songList4[0].dataset.song;
-console.log(audio4.src);
 var audio5 = new Audio();
 audio5.src = songList5[0].dataset.song;
 
@@ -122,7 +121,6 @@ function btnPrevNext(btn, btn1, btn2, btn3, btn4, oper, songname, songlist, imgb
 				btn3.classList.add("play");
 				btn4.classList.remove("stop");
 				btn4.classList.add("play");
-					console.log(songname.innerHTML,songlist[i].dataset.songName)
 				break;
 
 			}
@@ -186,6 +184,9 @@ function liOnClickHandler(that, target, audioObj, audioObj1, audioObj2, audioObj
 	audioObj4.pause();
 
 }
+
+
+
 
 playBtn1.onclick = function () {
 	watcherMinutesSeconds(duration1, progressLine1, progress1, audio1, minutes1, seconds1);
@@ -286,10 +287,13 @@ songUL5.onclick = function (e) {
 	liOnClickHandler(this, target, audio5, audio1, audio2, audio3, audio4, songName5, duration5, imgBlock5, playBtn5, playBtn1, playBtn2, playBtn3, playBtn4);
 }
 
+var songNames = document.querySelectorAll(".song-name");
+for (let i = 0; i < songNames.length; i++) {
+	console.log(songNames[i].innerHTML);
+}
 
 
-
-//animation!!!!!!
+//animation!!!!!! music
 var subscr = document.querySelectorAll(".subscr-right");
 var subscText = document.querySelectorAll(".subscr-text");
 var vk = document.querySelectorAll(".vk");
@@ -318,3 +322,4 @@ for (let i = 0; i < subscr.length; i++) {
 
 
 }
+//animation!!!Video
