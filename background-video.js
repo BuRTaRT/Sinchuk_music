@@ -5,7 +5,7 @@
     		"height": 720,
     		"path": "video1/",
     		"filename": "blood",
-    		"types": ["webm","mp4"],
+    		"types": ["mp4"],
     		"preload": true,
     		"autoplay": true,
     		"loop": true,

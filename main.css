@@ -190,9 +190,11 @@ footer {
 	letter-spacing: 0.5px;
 	max-height: 6000px;
 }
-img>p{
+
+img>p {
 	font-size: 0.79m;
 }
+
 .disco {
 	padding-top: 15px;
 	padding-left: 40px;
@@ -274,13 +276,15 @@ img>p{
 
 .time {
 	display: inline-block;
-	margin-left: 20px;
-	vertical-align: middle;
+	margin-left: 10px;
+	vertical-align: bottom;
+	cursor: default;
 }
 
 .duration {
 	display: inline-block;
 	vertical-align: middle;
+	cursor: default;
 }
 
 .subscr-right {
@@ -348,7 +352,7 @@ img>p{
 	padding-right: 20px;
 }
 
-.song-list {
+.song-list1 {
 	display: block;
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -357,25 +361,32 @@ img>p{
 	letter-spacing: 1px;
 	cursor: pointer;
 }
-
+.seconds, .minutes, .duration{
+	font-size:14px;
+	position: relative;
+}
 .track-length {
 	float: right;
 }
 
-.song-list:hover {
+.song-list1:hover {
 	color: #F0B000;
+	padding-bottom: 14px;
 }
 
 .song-list3:hover {
 	color: #F0B000;
+	padding-bottom: 14px;
 }
 
 .song-list4:hover {
 	color: #F0B000;
+	padding-bottom: 14px;
 }
 
 .song-list5:hover {
 	color: #F0B000;
+	padding-bottom: 14px;
 }
 
 .second-album {
@@ -412,6 +423,7 @@ img>p{
 
 .song-list2:hover {
 	color: #F0B000;
+	padding-bottom: 14px;
 }
 
 .controls2 {
@@ -763,7 +775,9 @@ img>p{
 
 .video-img-container {
 	height: 160px;
-	width: 5910px;
+	width: auto;
+	white-space: nowrap;
+	display: inline-block;
 	margin-top: 10px;
 	position: relative;
 	left: 0px;
@@ -771,6 +785,7 @@ img>p{
 	font-size: 0px;
 	text-align: left;
 }
+
 .video-img-container2 {
 	height: 160px;
 	width: 600px;
@@ -799,16 +814,58 @@ img {
 
 .prev {
 	float: left;
+	position: relative;
 	margin: 10px;
 	cursor: pointer;
 	color: white;
+	left: 70px;
+}
+
+.prev::before {
+	content: "";
+	position: absolute;
+	width: 43px;
+	height: 1.5px;
+	background-color: white;
+	top: 9px;
+	left: -50px;
+}
+
+.prev::after {
+	content: "";
+	position: absolute;
+	border: 4px solid transparent;
+	border-right: 8px solid white;
+	top: 6px;
+	left: -60px;
 }
 
 .next {
 	float: right;
+	position: relative;
 	margin: 10px;
 	cursor: pointer;
 	color: white;
+	right: 70px;
+}
+
+.next::before {
+	content: "";
+	position: absolute;
+	width: 43px;
+	height: 1.5px;
+	background-color: white;
+	top: 9px;
+	right: -50px;
+}
+
+.next::after {
+	content: "";
+	position: absolute;
+	border: 4px solid transparent;
+	border-left: 8px solid white;
+	top: 6px;
+	right: -60px;
 }
 
 .page-counter {
@@ -820,7 +877,7 @@ img {
 
 .img-block1 {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 
 .z-hover {
@@ -852,7 +909,8 @@ img {
 	bottom: 0px;
 	left: 0px;
 }
-.split-line{
+
+.split-line {
 	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
