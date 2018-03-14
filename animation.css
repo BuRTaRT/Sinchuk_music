@@ -1,3 +1,5 @@
+/* music-page anim*/
+
 @keyframes anim {
 	0% {
 		left: 150px;
@@ -37,4 +39,94 @@
 }
 
 
+
+/*contacts-page anim*/
+@keyframes phone-icon-anim {
+	0% {	transform: translateX(-5px)
+	}
+	
+	25% {	transform: translateX(5px)
+		
+	}
+	
+	50% {	transform: translateX(-5px)
+	
+	}
+	
+	75% {	transform: translateX(-5px)
+		
+	}
+	
+	100% {
+		transform: translateX(5px)
+	}
+}
+
+@keyframes bio-comments-anim{
+		0% {	
+			right: -100px;
+			opacity: 0.01;
+	}
+	
+	25% {	
+	}
+	
+	50% {	
+	opacity: 0.5;
+	}
+	
+	75% {	
+		
+	}
+	
+	100% {
+		
+	}
+}
+
+	@keyframes bio-wiki-anim{
+		0% {	transform: scale(0.3)
+ 
+	}
+	
+	25% {	transform: scale(1)
+	}
+	
+	50% {	
+	transform: scale(0.5)
+	}
+	
+	75% {	
+		transform: scale(0.7)
+	}
+	
+	100% {
+		transform: scale(1)
+	}
+}
+
+@keyframes concert-afisha{
+		0% {	left: -200px;
+			opacity: 0;
+	}
+}
+@keyframes concert-events{
+	0%{
+		left: 500px;
+		opacity: 0;
+		
+	}
+}
+@keyframes concert-concerts{
+	0%{
+		left: 200px;
+		opacity: 0;
+		
+	}
+}
+@keyframes contacts-header{
+	0%{
+		opacity: 0;
+		
+	}
 }

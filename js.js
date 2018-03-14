@@ -156,9 +156,10 @@ function AudioObjConsctructor(src, progressline, progress, songname, imgblock, b
 };
 
 var songArr = ["music/heart/song0.mp3", "music/coverman/song0.mp3", "music/Slava Sinchuk/song0.mp3", "music/A history/song0.mp3", "music/Tell me why/song0.mp3"];
-var objArr =[];
+var objArr = [];
 for (var i = 1; i <= 5; i++) {
-	objArr.push(window["audioObj" + i] = new AudioObjConsctructor(songArr[i-1], document.querySelector("#progress-line" + i), document.querySelector("#progress" + i), document.querySelector("#song-name" + i), document.querySelector("#img-block" + i), document.querySelector("#btn-play" + i), document.querySelector("#btn-prev" + i), document.querySelector("#btn-next" + i), document.querySelector("#song-ul" + i), document.querySelector("#duration" + i), document.querySelector("#minutes" + i), document.querySelector("#seconds" + i), document.querySelectorAll(".song-list" + i)))
+	objArr.push(window["audioObj" + i] = new AudioObjConsctructor(songArr[i - 1], document.querySelector("#progress-line" + i), document.querySelector("#progress" + i), document.querySelector("#song-name" + i), document.querySelector("#img-block" + i), document.querySelector("#btn-play" + i), document.querySelector("#btn-prev" + i), document.querySelector("#btn-next" + i), document.querySelector("#song-ul" + i), document.querySelector("#duration" + i), document.querySelector("#minutes" + i), document.querySelector("#seconds" + i), document.querySelectorAll(".song-list" + i)))
 
 };
 
+$(".songs-scroll").customScroll();

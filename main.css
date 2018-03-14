@@ -207,14 +207,7 @@ img>p {
 	font-family: monospace;
 }
 
-.wrap {
-	background-image: url(img/music-bg.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	min-height: 2400px;
-	margin: 0 auto;
-	background-repeat: no-repeat;
-}
+
 
 .container-music {
 	width: 1000px;
@@ -361,10 +354,14 @@ img>p {
 	letter-spacing: 1px;
 	cursor: pointer;
 }
-.seconds, .minutes, .duration{
-	font-size:14px;
+
+.seconds,
+.minutes,
+.duration {
+	font-size: 14px;
 	position: relative;
 }
+
 .track-length {
 	float: right;
 }
@@ -780,7 +777,7 @@ img>p {
 	display: inline-block;
 	margin-top: 10px;
 	position: relative;
-	left: 0px;
+	right: 0px;
 	animation-duration: 0.5s;
 	font-size: 0px;
 	text-align: left;
@@ -917,4 +914,192 @@ img {
 	height: 1px;
 	width: 90%;
 	background-color: white;
+}
+
+#body {
+		background-image: url(img/music-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 2400px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.contacts-body {
+	background-image: url(img/music-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 800px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.container-contacts {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.header-contacts {
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.underline {
+	width: 350px;
+	height: 1px;
+	background-color: white;
+	margin:  0 auto;	
+	color: white;
+	
+	
+}
+
+.info {
+	font-size: 1.4em;
+	padding-left: 120px;
+	font-family: monospace;
+	letter-spacing: 0.07em;
+}
+
+.phone-numbers {
+	display: inline-block;
+	position: relative;
+	top: 45px;
+}
+
+.follow-us {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	border-radius: 1000px;
+	overflow: hidden;
+	top: 30px;
+}
+
+.follow-video {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	z-index: 1;
+	top: -32px;
+	left: 0;
+}
+
+.follow {
+	position: absolute;
+	top: 112px;
+	left: 40px;
+	z-index: 2;
+	left: 70px;
+}
+
+.follow-line {
+	position: absolute;
+	top: 155px;
+	left: 42px;
+	width: 0px;
+	height: 1px;
+	background-color: white;
+	z-index: 2;
+}
+
+.social {
+	display:inline-block;
+	position: absolute;
+	top: 160px;
+	left: 70px;
+	z-index: 3;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.inst {
+	left: 124px;
+}
+
+.youtube {
+	left: 178px;
+}
+
+.contacts-icon {
+	position: relative;
+	top: 13px;
+	left: 10px;
+}
+
+.contacts-header {
+	text-shadow:rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
+}
+
+.container-concerts {
+	width: 1000px;
+	background-color: rgba(0,0,0,0.7);
+	margin: 0 auto;
+	min-height: 800px;
+}
+
+.header {
+	text-align: center;
+	word-spacing: 40px;
+	font-size: 3.4em;
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+.events {
+	position: relative;
+	top: 0;
+	left: 0;
+	animation-name: concert-events;
+	animation-duration: 1.5s;
+}
+
+.afisha {
+position: relative;
+	top: 0;
+	left: 0;
+	animation-name: concert-afisha;
+	animation-duration: 1.7s;
+	text-shadow:rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+}
+
+.concerts {
+	position: relative;
+	top: 0;
+	left: 0;
+	animation-name: concert-concerts;
+	animation-duration: 1.7s;
+}
+
+.content-block {
+	width: 90%;
+	min-height: 500px;
+	background-color: rgba(255,255,255,0.05);
+	margin: 0 auto;
+}
+
+.concerts-nav {
+	min-height: 50px;
+	width: 100%;
+	font-size: 1.2em;
+	border-bottom: 1px solid gray;
+}
+
+span {
+	
+}
+
+.text-to_be-dates {
+	margin-left: 20px; 
+	display: inline-block;
+	vertical-align:center;
 }
