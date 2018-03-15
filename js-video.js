@@ -1,7 +1,6 @@
 var prev1 = document.querySelector(".prev");
 var next1 = document.querySelector(".next");
 var container = document.querySelector(".video-img-container");
-var containerWidth = parseInt(getComputedStyle(container).width);
 var step = 840;
 var currentPosition = 0;
 prev1.onclick = function () {
@@ -20,6 +19,7 @@ prev1.onclick = function () {
 	}
 }
 next1.onclick = function () {
+	let containerWidth = parseInt(getComputedStyle(container).width);
 	prev1.style.visibility = "visible";
 	if (currentPosition > containerWidth - (step * 2)) {
 		this.style.visibility = "hidden";
@@ -63,4 +63,41 @@ for (let i = 0; i < imgZHover.length; i++) {
 document.onclick = function () {
 	let event = new Event("click");
 	iframe.dispatchEvent(event);
+}
+
+let searchString = document.querySelectorAll(".search-string");
+for (let i = 0; i < searchString.length; i++) {
+	let forPsevdo =document.querySelectorAll(".for-psevdo");
+	searchString[i].onfocus = function () {
+		this.style.backgroundColor = "rgba(255,255,255,.1)";
+		anime({
+			targets: forPsevdo[i],
+			left: 17 + "px",
+			easing: 'linear',
+			duration: 200
+		})
+		anime({
+			targets: this,
+			paddingLeft: 22 + "px",
+			easing: 'linear',
+			duration: 200
+		})
+	}
+	searchString[i].onblur = function () {
+		this.style.backgroundColor = "transparent";
+		searchString[i].setAttribute("placeholder", "Найти видео");
+		anime({
+			targets: forPsevdo[i],
+			left: -4 + "px",
+			easing: 'linear',
+			duration: 200
+		})
+		anime({
+			targets: this,
+			paddingLeft: 8 + "px",
+			easing: 'linear',
+			duration: 200
+		})
+	}
+
 }
