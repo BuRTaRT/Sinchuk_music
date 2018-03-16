@@ -6,7 +6,7 @@
 	<title>video</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="animation-video.css">
+	<link rel="stylesheet" href="animation.css">
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="jquery.backgroundvideo.min.js"></script>
 	<script src="background-video.js"></script>
@@ -171,8 +171,8 @@
 					</div>
 				</div>
 				<div class="video-img-controller">
-					<span class="prev">Назад</span>
-					<span class="next">Вперёд</span>
+					<span class="prev" id="prev1">Назад</span>
+					<span class="next" id="next1">Вперёд</span>
 				</div>
 
 			</div>
@@ -180,16 +180,23 @@
 			<div class="video-block1">
 				<div class="video-container">
 					<span class="fan">GALAXY. HISTORY - OLD VIDEO Chanell</span>
-					<iframe class="iframe" width="800" height="520" src="https://www.youtube.com/embed/4MlimJWT7vM" frameborder="0" allowfullscreen></iframe>
+					<iframe class="iframe" id="iframe1" width="800" height="520" src="https://www.youtube.com/embed/4MlimJWT7vM" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="psevdo clearfix">
 					<div class="for-psevdo"></div><input class="search-string" type="text" placeholder="Найти видео"></div>
 				<div class="video-img-container2">
-					<img class="video-img" src="img/img1.jpg" alt="">
+					<div class="video-img"><img class="img-block1" src="video-img/img21.jpg" height="140px" width="260px" alt="">
+						<div class="z-hover" data-youtube="https://www.youtube.com/embed/Xs61zFZRRlc">
+							<div class="round"></div>
+							<div class="video-song-name">SLAVA SINCHUK & GALAXY - Пока...( Я буду помнить этот зал...)</div>
+							<div class="video-length">03:36</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="video-img-controller">
-					<span class="prev">Назад</span>
-					<span class="next">Вперёд</span>
+					<span class="prev" id="prev2" >Назад</span>
+					<span class="next" id="next2">Вперёд</span>
 				</div>
 			</div>
 		</div>
@@ -201,6 +208,7 @@
 				<span>SLAVA SINCHUK</span><br>
 				<a href="#">www.tratata.com</a>
 			</div>
+			<div class="mus-player"></div>
 			<div class="nav clearfix">
 				<ul id="ul">
 					<li><a href="index.html">Home</a></li>
@@ -211,7 +219,9 @@
 					<li><a href="contacts.html">Contact</a></li>
 				</ul>
 			</div>
-
+<a href="https://www.youtube.com/user/slava77895" class="footer-social" target="_blank"><img src="img/footer-youtube.png" alt="youtube"></a>
+	<a href="https://www.facebook.com/slava.sinchuk" class="footer-social" target="_blank"><img src="img/footer-facebook.png" alt="youtube" ></a>
+	<a href="https://instagram.com/plai_sinchuk/" class="footer-social" target="_blank"><img src="img/footer-twitter.png" alt="youtube"></a>
 		</div>
 		<div class="line"><span class="copy-right"> &copy; 2017  GALAXY</span></div>
 	</footer>

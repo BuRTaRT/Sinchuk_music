@@ -3,6 +3,8 @@ var next1 = document.querySelector(".next");
 var container = document.querySelector(".video-img-container");
 var step = 840;
 var currentPosition = 0;
+
+
 prev1.onclick = function () {
 	next1.style.visibility = "visible";
 	if (currentPosition <= step) {
@@ -18,6 +20,8 @@ prev1.onclick = function () {
 		})
 	}
 }
+
+
 next1.onclick = function () {
 	let containerWidth = parseInt(getComputedStyle(container).width);
 	prev1.style.visibility = "visible";
@@ -35,10 +39,14 @@ next1.onclick = function () {
 		})
 	}
 }
+
+
 var videoImgBlocks = document.querySelectorAll(".video-img");
 var videoImg = document.querySelectorAll(".img-block1");
 var imgZHover = document.querySelectorAll(".z-hover");
 let iframe = document.querySelector(".iframe");
+
+
 for (let i = 0; i < videoImgBlocks.length; i++) {
 	videoImgBlocks[i].onmouseover = function () {
 		videoImg[i].style.zIndex = "0";
@@ -60,14 +68,12 @@ for (let i = 0; i < imgZHover.length; i++) {
 	}
 }
 
-document.onclick = function () {
-	let event = new Event("click");
-	iframe.dispatchEvent(event);
-}
+
 
 let searchString = document.querySelectorAll(".search-string");
+
 for (let i = 0; i < searchString.length; i++) {
-	let forPsevdo =document.querySelectorAll(".for-psevdo");
+	let forPsevdo = document.querySelectorAll(".for-psevdo");
 	searchString[i].onfocus = function () {
 		this.style.backgroundColor = "rgba(255,255,255,.1)";
 		anime({
@@ -101,3 +107,35 @@ for (let i = 0; i < searchString.length; i++) {
 	}
 
 }
+
+function func(arr) {
+	let outputArr = [];
+	
+	for (let i = 0; i < arr.length; i++) {
+		let arr1 = arr.slice();
+		let sum = arr[i];
+		let combo =arr[i]+"";
+		for (let j = 0; j < arr1.length; j++) {
+			if (i == j)continue;
+			if (sum + arr1[j] < 10) {
+				sum += arr1[j];
+				combo+="+"+arr1[j];
+				arr1.splice(j, j);
+				j=0;
+			}
+			if(sum+arr1[j]==10){
+				combo+="+"+arr1[j];
+				sum += arr1[j];
+				arr1.splice(j,j);
+				j=0;
+				outputArr.push(combo);
+				combo=arr[i]+"";
+				sum=arr[i];
+			}
+
+		}
+	}
+	console.log(outputArr);
+}
+let array = [2,2,6,3,7];
+func(array);
