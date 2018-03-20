@@ -17,7 +17,8 @@ function getCookie(c_name) {
 	}
 }
 
-var song = document.getElementsByTagName('audio')[0];
+var song = document.querySelector("#main-track");
+song.pause();
 var played = false;
 var tillPlayed = getCookie('timePlayed');
 

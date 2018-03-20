@@ -1,3 +1,4 @@
+
 let followBlock = document.querySelector(".follow-us");
 let followTop = getComputedStyle(document.querySelector(".follow"));
 let socFace = document.querySelector(".social-face");

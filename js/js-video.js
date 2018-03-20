@@ -137,5 +137,5 @@ function func(arr) {
 	}
 	console.log(outputArr);
 }
-let array = [2,2,6,3,7];
+let array = [3, 9, 6, 2, 8, 5, 5, 2, 7, 1];
 func(array);

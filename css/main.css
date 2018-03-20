@@ -32,12 +32,10 @@ footer {
 }
 
 .footer-inner {
-	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 	color: white;
-	text-align: center;
-	min-height: 75px;
 	margin-top: 5px;
+	text-align: center;
 }
 
 .copy-right {
@@ -54,11 +52,6 @@ footer {
 	margin-left: 25px;
 }
 
-.link>a {
-	display: inline-block;
-	color: white;
-}
-
 .link>span {}
 
 .nav {
@@ -68,13 +61,9 @@ footer {
 	margin-top: 20px;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-}
 
-.nav>ul>li>a {
+
+.nav-a{
 	padding: 10px 10px;
 	border-radius: 8px;
 	background: linear-gradient(180deg, #181818, rgb(80, 80, 80));
@@ -82,16 +71,60 @@ ul {
 	text-decoration: none;
 	font-size: 18px;
 }
-
-.nav>ul>li {
+.nav-li{
 	display: inline-block;
 	vertical-align: top;
 }
+
+
 
 .nav>ul>li>a:hover {
 	background: linear-gradient(180deg, #505050, rgb(124, 124, 124));
 	transition: background 1s;
 }
+.footer-social {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 8px;
+	font-size: 0px;
+	height: 40px;
+	width: 40px;
+}
+.footer-social:first-of-type{
+	margin-left: 12px;
+}
+
+.mus-player {
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	margin-top: 10px;
+	border: 1px solid gray;
+	position: relative;
+	cursor: pointer;
+	
+}
+.mus-player::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -6px;
+	margin-top: -10.5px;
+	border: 10px solid transparent;
+	border-left: 15px solid white;
+}
+.mus-player:hover{
+	border: 1px solid white;
+}
+
+.site-name-link {
+	text-decoration: none;
+	color: white;
+}
+
 
 .btn {
 	position: absolute;
@@ -332,7 +365,7 @@ img>p {
 .img-block {
 	min-height: 500px;
 	width: 572px;
-	background: url(img/heart-of-stone.jpg);
+	background: url(../img/heart-of-stone.jpg);
 	margin-top: 15px;
 	margin-left: 13px;
 	background-position: center;
@@ -416,7 +449,7 @@ img>p {
 }
 
 .img-block2 {
-	background: url(img/img10.jpg);
+	background: url(../img/img10.jpg);
 	width: 550px;
 	height: 550px;
 	background-position: center;
@@ -461,7 +494,7 @@ img>p {
 }
 
 .img-block3 {
-	background: url(img/img11.jpg);
+	background: url(../img/img11.jpg);
 	width: 280px;
 	height: 280px;
 	background-position: center;
@@ -547,7 +580,7 @@ img>p {
 }
 
 .img-block4 {
-	background: url(img/img12.jpg);
+	background: url(../img/img12.jpg);
 	width: 280px;
 	height: 280px;
 	background-position: center;
@@ -580,7 +613,7 @@ img>p {
 }
 
 .img-block5 {
-	background: url(img/img13.jpg);
+	background: url(../img/img13.jpg);
 	width: 280px;
 	height: 280px;
 	background-position: center;
@@ -805,7 +838,6 @@ img>p {
 
 .video-img-container2 {
 	height: 160px;
-	width: 600px;
 	margin-top: 10px;
 	position: relative;
 	left: 0;
@@ -938,7 +970,7 @@ img {
 }
 
 #body {
-	background-image: url(img/music-bg.jpg);
+	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 2400px;
@@ -947,7 +979,7 @@ img {
 }
 
 .contacts-body {
-	background-image: url(img/music-bg.jpg);
+	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 800px;
@@ -1342,38 +1374,9 @@ span {}
 	max-height: 6000px;
 }
 
-.footer-social {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 8px;
-	font-size: 0px;
-}
-.footer-social:first-of-type{
-	margin-left: 12px;
-}
 
-.mus-player {
-	display: inline-block;
-	vertical-align: top;
-	height: 40px;
-	width: 40px;
-	background-color: transparent;
-	margin-top: 10px;
-	border: 1px solid gray;
-	position: relative;
-	cursor: pointer;
-	
-}
-.mus-player::after{
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -6px;
-	margin-top: -10.5px;
-	border: 10px solid transparent;
-	border-left: 15px solid white;
-}
-.mus-player:hover{
-	border: 1px solid white;
+.nav-ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
 }
