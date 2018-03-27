@@ -5,7 +5,7 @@
 	margin: 0 auto;
 	min-height: 110%;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.7);
 	color: white;
 	overflow: hidden;
 }
@@ -169,7 +169,7 @@ footer {
 
 .container-bio {
 	margin: 0 auto;
-	min-height: 6130px;
+	min-height: 6250px;
 	width: 1000px;
 }
 
@@ -177,12 +177,14 @@ footer {
 	margin-top: 0px;
 	margin-bottom: 15px;
 	font-family: monospace;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 .left-col {
 	float: left;
-	width: 50%;
+	width: 48%;
+	height: 6010px;
+	margin-right: 20px;
 }
 
 .right-col {
@@ -230,12 +232,12 @@ footer {
 }
 
 .descr {
-	width: 440px;
+	max-width: 445px;
 	font-weight: 500;
-	font-size: 0.8em;
-	line-height: 1.15;
-	letter-spacing: 0.5px;
-	max-height: 6000px;
+	font-size: 0.82em;
+	line-height: 1.14;
+	letter-spacing: 0.4px;
+	height: 5250px;
 }
 
 img>p {
@@ -243,7 +245,6 @@ img>p {
 }
 
 .disco {
-	padding-top: 15px;
 	padding-left: 40px;
 	font-size: 30px;
 	font-family: monospace;
@@ -252,9 +253,11 @@ img>p {
 }
 
 .disco-songs {
-	letter-spacing: 2px;
+	letter-spacing: 0.1em;
 	font-family: monospace;
-	font-size: 0.9em;
+	font-size: 0.84em;
+	height: 320px;
+	width: 90%;
 }
 
 .container-music {
@@ -1094,7 +1097,6 @@ img {
 
 .container-concerts {
 	width: 1000px;
-	background-color: rgba(0, 0, 0, 0.7);
 	margin: 0 auto;
 	min-height: 800px;
 }
@@ -1339,6 +1341,7 @@ span {}
 	animation-name: bio-comments;
 	animation-duration: 1.5s;
 	font-family: monospace;
+	max-height: 140px;
 }
 
 .citate {
@@ -1357,6 +1360,7 @@ span {}
 	letter-spacing: 0.5px;
 	max-height: 6000px;
 	margin-top: 5px;
+	height: 5200px;
 }
 
 .bio-name {
@@ -1366,19 +1370,19 @@ span {}
 }
 
 .descr-ukr {
-	width: 440px;
+	width: 445px;
 	font-weight: 500;
 	font-size: 0.82em;
 	line-height: 1.15;
 	letter-spacing: 0.8px;
-	max-height: 6000px;
+	height: 5200px;
 }
 
 
 .nav-ul {
 	margin: 0;
 	padding: 0;
-	font-size: 0;
+	font-size: 0px;
 }
 
 .btn-index {
