@@ -37,6 +37,8 @@ footer {
 	color: white;
 	margin-top: 5px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .copy-right {
@@ -48,9 +50,8 @@ footer {
 }
 
 .link {
-	display: inline-block;
-	margin: 15px auto;
-	margin-left: 25px;
+	margin-top: 15px;
+	margin-right: 10px;
 }
 
 .link>span {}
@@ -95,8 +96,6 @@ footer {
 }
 
 .mus-player {
-	display: inline-block;
-	vertical-align: top;
 	height: 40px;
 	width: 40px;
 	background-color: transparent;
@@ -104,6 +103,7 @@ footer {
 	border: 1px solid gray;
 	position: relative;
 	cursor: pointer;
+	margin-right: 10px;
 	
 }
 .mus-player::after{
