@@ -1,2 +1,2 @@
 AddDefaultCharset utf8
-AddType text/css .css
+AddType 'text/css; charset=UTF-8' css
