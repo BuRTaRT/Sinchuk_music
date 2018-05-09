@@ -74,7 +74,7 @@ footer {
 	font-size: 1rem;
 }
 .nav-li{
-	max-width: 100%;
+	width: auto;
 }
 
 
@@ -181,15 +181,12 @@ footer {
 }
 
 .left-col {
-	float: left;
-	width: 48%;
-	height: 6010px;
+	flex-basis: 48%;
 	margin-right: 20px;
 }
 
 .right-col {
-	float: left;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .bio {
@@ -1400,4 +1397,8 @@ span {}
 	cursor: pointer;
 	position: relative;
 	left: -73px;
+}
+
+.flex-container {
+	display: flex;
 }
