@@ -30,7 +30,6 @@ followBlock.addEventListener("mouseenter", function () {
 
 followBlock.onmouseleave = function (e) {
 	let target = e.target;
-	console.log(target);
 	anime({
 		targets: ".follow",
 		top: 112 + "px",
