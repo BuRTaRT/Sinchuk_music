@@ -116,13 +116,11 @@ function AudioObjConsctructor(src, progressline, progress, songname, imgblock, b
 		watcherBtnPrevNext(this, -1);
 		watcherMinutesSecondsProgress(this);
 		btnClasslistRemoverAdder(this);
-
 	}
 	this.btnNext.onclick = () => {
 		watcherBtnPrevNext(this, 1);
 		watcherMinutesSecondsProgress(this);
 		btnClasslistRemoverAdder(this);
-
 	}
 	this.progressline.onclick = () => {
 		watcherMinutesSecondsProgress(this);

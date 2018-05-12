@@ -107,35 +107,3 @@ for (let i = 0; i < searchString.length; i++) {
 	}
 
 }
-
-function func(arr) {
-	let outputArr = [];
-	
-	for (let i = 0; i < arr.length; i++) {
-		let arr1 = arr.slice();
-		let sum = arr[i];
-		let combo =arr[i]+"";
-		for (let j = 0; j < arr1.length; j++) {
-			if (i == j)continue;
-			if (sum + arr1[j] < 10) {
-				sum += arr1[j];
-				combo+="+"+arr1[j];
-				arr1.splice(j, j);
-				j=0;
-			}
-			if(sum+arr1[j]==10){
-				combo+="+"+arr1[j];
-				sum += arr1[j];
-				arr1.splice(j,j);
-				j=0;
-				outputArr.push(combo);
-				combo=arr[i]+"";
-				sum=arr[i];
-			}
-
-		}
-	}
-	console.log(outputArr);
-}
-let array = [3, 9, 6, 2, 8, 5, 5, 2, 7, 1];
-func(array);
