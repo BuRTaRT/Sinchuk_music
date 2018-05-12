@@ -63,9 +63,7 @@ footer {
 	margin-top: 20px;
 }
 
-
-
-.nav-a{
+.nav-a {
 	padding: 10px 10px;
 	border-radius: 8px;
 	background: linear-gradient(180deg, #181818, rgb(80, 80, 80));
@@ -73,16 +71,16 @@ footer {
 	text-decoration: none;
 	font-size: 1rem;
 }
-.nav-li{
+
+.nav-li {
 	width: auto;
 }
-
-
 
 .nav>ul>li>a:hover {
 	background: linear-gradient(180deg, #505050, rgb(124, 124, 124));
 	transition: background 1s;
 }
+
 .footer-social {
 	display: inline-block;
 	vertical-align: top;
@@ -91,7 +89,8 @@ footer {
 	height: 40px;
 	width: 40px;
 }
-.footer-social:first-of-type{
+
+.footer-social:first-of-type {
 	margin-left: 12px;
 }
 
@@ -104,9 +103,9 @@ footer {
 	position: relative;
 	cursor: pointer;
 	margin-right: 10px;
-	
 }
-.mus-player::after{
+
+.mus-player::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -116,7 +115,8 @@ footer {
 	border: 10px solid transparent;
 	border-left: 15px solid white;
 }
-.mus-player:hover{
+
+.mus-player:hover {
 	border: 1px solid white;
 }
 
@@ -124,7 +124,6 @@ footer {
 	text-decoration: none;
 	color: white;
 }
-
 
 .btn {
 	position: absolute;
@@ -246,7 +245,7 @@ img>p {
 	font-size: 30px;
 	font-family: monospace;
 	letter-spacing: 0.3em;
-	text-shadow:rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
 }
 
 .disco-songs {
@@ -1156,7 +1155,6 @@ span {}
 	margin: 15px;
 	display: inline-block;
 	vertical-align: bottom;
-	
 }
 
 .round {
@@ -1200,7 +1198,8 @@ span {}
 	position: relative;
 	opacity: 0.4;
 }
-.psevdo{
+
+.psevdo {
 	position: relative;
 	width: 100%;
 	height: 20px;
@@ -1208,11 +1207,12 @@ span {}
 	font-family: monospace;
 }
 
-.for-psevdo{
+.for-psevdo {
 	position: relative;
 	top: 3px;
 	left: -4px;
 }
+
 .for-psevdo::before {
 	content: "";
 	position: absolute;
@@ -1223,6 +1223,7 @@ span {}
 	top: 4px;
 	left: 25px;
 }
+
 .for-psevdo::after {
 	content: "";
 	position: absolute;
@@ -1235,7 +1236,6 @@ span {}
 	transform: rotate(45deg);
 }
 
-
 .place-dates {
 	opacity: 0.4;
 }
@@ -1243,7 +1243,7 @@ span {}
 .event {
 	font-family: monospace;
 	font-size: 28px;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(0, 0, 0, .4);
 	border-bottom: 1px solid gray;
 	padding: 20px;
 	padding-top: 30px;
@@ -1252,7 +1252,7 @@ span {}
 
 .date {
 	display: inline-block;
-	 font-size: 0;
+	font-size: 0;
 	width: 120px;
 }
 
@@ -1260,7 +1260,7 @@ span {}
 	display: inline-block;
 	font-size: 20px;
 	margin-left: 3px;
-	vertical-align:top;
+	vertical-align: top;
 	margin-top: 15px;
 }
 
@@ -1269,7 +1269,7 @@ span {}
 	font-size: 0.7em;
 	margin-left: 20px;
 	width: 250px;
-	vertical-align:top;
+	vertical-align: top;
 	margin-top: 15px;
 }
 
@@ -1286,7 +1286,7 @@ span {}
 	height: 40px;
 	width: 160px;
 	border: 2px solid #F0B000;
-	vertical-align:top;
+	vertical-align: top;
 	float: right;
 	margin-top: 3px;
 }
@@ -1300,21 +1300,21 @@ span {}
 	text-align: center;
 	display: inline-block;
 	line-height: 40px;
-
 }
-.event-go:hover{
+
+.event-go:hover {
 	background-color: #F0B000;
 	color: white;
 }
-.event:nth-child(odd){
+
+.event:nth-child(odd) {
 	background-color: #181818;
 }
+
 .num {
 	font-size: 14px;
 	margin-right: 10px;
 }
-
-
 
 .img-flag {
 	display: inline-block;
@@ -1329,7 +1329,8 @@ span {}
 	display: inline-block;
 	padding-top: 4px;
 }
-.language:hover{
+
+.language:hover {
 	color: dimgray;
 }
 
@@ -1350,7 +1351,7 @@ span {}
 }
 
 .descr-eng {
-		width: 440px;
+	width: 440px;
 	font-weight: 500;
 	font-size: 0.842em;
 	letter-spacing: normal;
@@ -1375,7 +1376,6 @@ span {}
 	letter-spacing: 0.8px;
 	height: 5200px;
 }
-
 
 .nav-ul {
 	margin: 0;
@@ -1402,3 +1402,39 @@ span {}
 .flex-container {
 	display: flex;
 }
+
+.mus-player-stop {
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	margin-top: 10px;
+	border: 1px solid gray;
+	position: relative;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.mus-player-stop::after {
+	content: "";
+	position:absolute;
+	height: 20px;
+	width: 5px;
+	left: 12px;
+	top: 10px;
+	background-color: white;
+	color: white;
+}
+.mus-player-stop::before {
+	content: "";
+	position:absolute;
+	height: 20px;
+	width: 5px;
+	left: 22px;
+	top: 10px;
+	background-color: white;
+	color: white;
+}
+.mus-player-stop:hover{
+	border: 1px solid white;
+}
+
