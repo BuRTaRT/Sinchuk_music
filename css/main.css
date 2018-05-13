@@ -983,7 +983,7 @@ img {
 	background-attachment: fixed;
 	background-size:cover;
 	margin: 0 auto;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	color: white;
 }
 
