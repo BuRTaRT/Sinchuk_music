@@ -981,7 +981,7 @@ img {
 .contacts-body {
 	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
-	background-size: cover;
+	background-size:cover;
 	min-height: 800px;
 	margin: 0 auto;
 	background-repeat: no-repeat;
