@@ -982,7 +982,6 @@ img {
 	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
 	background-size:cover;
-	min-height: 800px;
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	color: white;
@@ -1438,3 +1437,7 @@ span {}
 	border: 1px solid white;
 }
 
+
+.wrap-contacts {
+	min-height: 800px;
+}
