@@ -979,11 +979,10 @@ img {
 }
 
 .contacts-body {
-	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
 	background-size:cover;
 	margin: 0 auto;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	color: white;
 }
 
@@ -1440,4 +1439,9 @@ span {}
 
 .wrap-contacts {
 	min-height: 800px;
+}
+.html-contacts {
+	background-image: url(../img/music-bg.jpg);
+	background-attachment: fixed;
+	background-size:cover;
 }
