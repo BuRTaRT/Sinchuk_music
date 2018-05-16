@@ -4,7 +4,7 @@
     		"width": 1280,
     		"height": 720,
     		"path": "video1/",
-    		"filename": "BgVideo",
+    		"filename": "bgVideo",
     		"types": ["mp4"],
     		"preload": true,
     		"autoplay": true,
