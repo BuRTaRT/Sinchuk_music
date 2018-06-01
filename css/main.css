@@ -234,6 +234,7 @@ footer {
 	line-height: 1.14;
 	letter-spacing: 0.4px;
 	height: 5250px;
+	overflow: hidden;
 }
 
 img>p {
