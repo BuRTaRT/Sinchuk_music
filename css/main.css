@@ -230,7 +230,7 @@ footer {
 .descr {
 	max-width: 445px;
 	font-weight: 500;
-	font-size: 0.82em;
+	font-size: 82%;
 	line-height: 1.14;
 	letter-spacing: 0.4px;
 	height: 5250px;
@@ -984,6 +984,7 @@ img {
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	color: white;
+	height: 100vh;
 }
 
 .container-contacts {
@@ -1444,4 +1445,5 @@ span {}
 	background-image: url(../img/music-bg.jpg);
 	background-attachment: fixed;
 	background-size:cover;
+	height: 100vh;
 }
