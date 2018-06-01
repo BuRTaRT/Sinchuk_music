@@ -228,9 +228,9 @@ footer {
 }
 
 .descr {
-	max-width: 445px;
+	min-width: 445px;
 	font-weight: 500;
-	font-size: 82%;
+	font-size: 0.87em;
 	line-height: 1.14;
 	letter-spacing: 0.4px;
 	height: 5250px;
