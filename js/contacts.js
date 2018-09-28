@@ -1,8 +1,8 @@
 
-let followBlock = document.querySelector(".follow-us");
-let followTop = getComputedStyle(document.querySelector(".follow"));
-let socFace = document.querySelector(".social-face");
-let step = 70;
+var followBlock = document.querySelector(".follow-us");
+var followTop = getComputedStyle(document.querySelector(".follow"));
+var socFace = document.querySelector(".social-face");
+var step = 70;
 followBlock.addEventListener("mouseenter", function () {
 	anime({
 		targets: ".follow",
