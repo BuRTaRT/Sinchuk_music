@@ -1,6 +1,6 @@
-let musBtn = document.querySelector(".mus-player");
-let audio = document.getElementById("bgAudio");
-let timer;
+var musBtn = document.querySelector(".mus-player");
+var audio = document.getElementById("bgAudio");
+var timer;
 audio.currentTime = sessionStorage.getItem("currentTime");
 if (sessionStorage.getItem("status") == "play") {
 	musBtn.classList = "mus-player-stop";
