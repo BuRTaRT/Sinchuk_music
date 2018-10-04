@@ -1360,6 +1360,7 @@ span {}
 	max-height: 6000px;
 	margin-top: 5px;
 	height: 5200px;
+    overflow: hidden;
 }
 
 .bio-name {
@@ -1375,6 +1376,7 @@ span {}
 	line-height: 1.15;
 	letter-spacing: 0.8px;
 	height: 5200px;
+    overflow: hidden;
 }
 
 .nav-ul {
