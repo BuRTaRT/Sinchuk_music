@@ -1,8 +1,7 @@
 # Slava_sinchuk
-Static web-site.
+Static website.
 
-
-### This is my training poject,I've tried to made up web-site without any PSD layouts or technical tasks.Its music web-site,that contains
+### This is my training project ,I've tried to make  website without any PSD layouts or technical tasks.Its music web-site,that contains
 songs and video clips.
 
 
