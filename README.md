@@ -1,6 +1,8 @@
 # Slava_sinchuk
 Static website.
 
+##Preview - https://raw.githack.com/BuRTaRT/Sinchuk_music/master/index.html
+
 ### This is my old training project,I've tried to make website and it's styling without any PSD layouts,there were no goal to optimize it for fast working(site is pretty heavy, cause of video backgrounds on some pages).Its music website that contains songs and video clips. Most part of Javascript logic is in the file audio-scipts.js. Animations made partly with keyframes and partly with jquery library - Anime.js.
 
 
